@@ -16,7 +16,7 @@ app.use(express.static("public"));
 app.use(bodyParser.urlencoded({extended: true}));
 
 app.use(session({
-  secret: "Tihati, It's a beautiful place",
+  secret: process.env.OPTIHATI,
   resave: false,
   saveUninitialized: true
 }));
